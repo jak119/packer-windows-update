@@ -6,5 +6,4 @@ RUN mkdir -p /tmp/windows-update && \
     chmod 755 /bin/packer-provisioner-windows-update && chown root:root /bin/packer-provisioner-windows-update && \
     rm -rf /tmp/windows-update
 
-WORKDIR $GOPATH
 ENTRYPOINT ["bin/packer"]
